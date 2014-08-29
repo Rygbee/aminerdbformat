@@ -16,15 +16,16 @@ page_start       | String         | Page Start             | 990
 page_end         | String         | Page End               | 998
 volume           | String         | Volume                 | 
 issue            | String         | Issue                  |
-editor           | AuthorInPub*   | Editor List            |
+editor           | [AuthorInPub*](#authorinpub)   | Editor List            |
 author_str       | String         | Origin Author String   | Jie Tang, Jing Zhang,Limin Yao, Juanzi Li,Li Zhang, Zhong Su
-venue            | VenueInPub*    | Venue Information      | 
+author           | [AuthorInPub*](#authorinpub)   | Author List            |
+venue            | [VenueInPub*](#venueinpub)    | Venue Information      | 
 isbn             | String         | ISBN                   |
 issn             | String         | ISSN                   |
 doi              | String         | DOI                    |
 url              | String List    | external links         | ["http://xxx.com/doi/xxx","http://yyy.org/xxx"]
-citation         | CiteInfo*      | cited by other papers  | 
-reference        | CiteInfo*      | reference some other paper | 
+citation         | [CiteInfo*](#citeinfo)      | cited by other papers  | 
+reference        | [CiteInfo*](#citeinfo)      | reference some other paper | 
 raw_reference    | String         | reference string       | 
 src              | String         | identity of data source  | ides
 sid              | String         | origin id in data source | "0123467fb"
@@ -87,8 +88,3 @@ inproceedings    | 10          |
 article          | 11          |
 incollection     | 12          |
 www              | 13          |
-
-
-
-
-
